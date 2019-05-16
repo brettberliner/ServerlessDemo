@@ -7,14 +7,14 @@
         "All the command line options for the Lambda command can be specified in this file."
     ],
     "profile"     : "default",
-    "region"      : "us-west-2",
+    "region"      : "us-east-1",
     "configuration" : "Release",
     "framework"     : "netcoreapp2.1",
     "function-runtime" : "dotnetcore2.1",
     "function-memory-size" : 256,
     "function-timeout"     : 30,
-    "function-handler"     : "ServerlessDemo.Monitoring::ServerlessDemo.Monitoring.MonitoringFunction::MonitoringFunctionHandler",
-    "function-name"        : "ServerlessDemo-Monitoring",
+    "function-handler"     : "ServerlessDemo.OrderFood::ServerlessDemo.OrderFood.Function::FunctionHandler",
+    "function-name"        : "ServerlessDemo-FoodOrder",
     "function-role"        : "arn:aws:iam::938907782672:role/lambda_exec_ServerlessDemo.Monitoring",
     "tracing-mode"         : "PassThrough",
     "environment-variables" : ""

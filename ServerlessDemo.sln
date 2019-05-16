@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerlessDemo", "Serverles
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerlessDemo.Monitoring", "ServerlessDemo.Monitoring\ServerlessDemo.Monitoring.csproj", "{B5967061-BA06-4502-AA59-1C34A62BBFCA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerlessDemo.OrderFood", "ServerlessDemo.BookAppointment\ServerlessDemo.OrderFood.csproj", "{D0EE79D7-4185-4FF0-8209-0CBF9848F7D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B5967061-BA06-4502-AA59-1C34A62BBFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5967061-BA06-4502-AA59-1C34A62BBFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5967061-BA06-4502-AA59-1C34A62BBFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EE79D7-4185-4FF0-8209-0CBF9848F7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EE79D7-4185-4FF0-8209-0CBF9848F7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EE79D7-4185-4FF0-8209-0CBF9848F7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EE79D7-4185-4FF0-8209-0CBF9848F7D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

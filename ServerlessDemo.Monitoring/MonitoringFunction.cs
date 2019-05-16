@@ -25,7 +25,7 @@ namespace ServerlessDemo.Monitoring
         public string MonitoringFunctionHandler(string input, ILambdaContext context)
         {
             string result = "";
-            bool pingResult = false;
+            PingReply reply = null;
             Ping pingClient = null;
 
             if (!this.IsValidUrlOrIp(input))
@@ -37,8 +37,7 @@ namespace ServerlessDemo.Monitoring
                 try
                 {
                     pingClient = new Ping();
-                    PingReply reply = pingClient.Send(input);
-                    pingResult = reply?.Status == IPStatus.Success;
+                    reply = pingClient.Send(input);
                 }
                 catch (PingException)
                 {
@@ -52,7 +51,8 @@ namespace ServerlessDemo.Monitoring
                     }
                 }
 
-                result = pingResult ? "Site responded successfully." : "Could not get a response from this site, it must be down, panic!!";
+                result = reply?.Status == IPStatus.Success ? $"Site responded successfully. IP: {reply.Address} Time: {reply.RoundtripTime} ms" 
+                    : "Could not get a response from this site, it must be down, panic!!";
             }
 
             return result;

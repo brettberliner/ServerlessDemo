@@ -10,9 +10,9 @@ namespace ServerlessDemo.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string version = "v1")
         {
-            return View();
+            return View(new IndexModel { Version = version });
         }
 
         public IActionResult About()
