@@ -15,6 +15,12 @@ namespace ServerlessDemo.Controllers
             return View(new IndexModel { Version = version });
         }
 
+        [HttpGet]
+        public IActionResult GetData()
+        {
+            return Json(new { Message = "This is legacy test data" });
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
